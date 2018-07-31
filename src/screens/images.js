@@ -1,19 +1,19 @@
 import React, { Component } from 'react'
 import { View, Image, Dimensions } from 'react-native'
-import { iconLogo, iconBisaTumbuh } from '../assets/images';
+import { iconLogos } from '../assets/images';
 
-const { width } = Dimensions.get('window')
+const { widths } = Dimensions.get('window')
 
 export default class Images extends Component {
   render() {
     return (
       <View
         style={{
-          flexDirection: 'column'
+          flexDirection: 'flex-start'
         }}
       >
         <Image
-          source={iconLogo}
+          source={iconLogos}
           resizeMethod="auto"
           resizeMode="center"
           style={{width: width - 30, height: 100}}
@@ -22,7 +22,7 @@ export default class Images extends Component {
           source={iconBisaTumbuh}
           resizeMethod="auto"
           resizeMode="center"
-          style={{width: width - 50, height: 100}}
+          style={{width: widths - 50, height: 100}}
         />
       </View>
     )
