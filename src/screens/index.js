@@ -1,18 +1,14 @@
 import React, { Component } from 'react'
 import { Text, View, StyleSheet } from 'react-native'
-import Images from '../images'
+import Images from './images'
 
 export default class Home extends Component {
   render() {
     return (
       <View>
-        <Text style={styles.intro}>
-          Investree Testing! 
-        </Text>
-        <Images/>
-        <Text style={styles.intros}>
-         Thanks for FIXED Me !!!
-        </Text>
+        <Text style={styles.intro}>Investree Testing!</Text>
+        <Images />
+        <Text style={styles.intros}>Thanks for FIXED Me !!!</Text>
       </View>
     )
   }
@@ -26,6 +22,6 @@ const styles = StyleSheet.create({
   intros: {
     fontSize: 25,
     textAlign: 'center',
-    margin: 20,
-  },
-});
+    margin: 20
+  }
+})

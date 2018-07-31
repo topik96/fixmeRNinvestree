@@ -4,28 +4,25 @@
  * @flow
  */
 
-import React, { Component } from 'react';
-import {
-  StyleSheet,
-  SafeAreaView
-} from 'react-native';
+import React, { Component } from 'react'
+import { StyleSheet, SafeAreaView } from 'react-native'
 import Home from './src/screens'
 
 export default class App extends Component {
   render() {
     return (
       <SafeAreaView style={styles.container}>
-        <Home/>
+        <Home />
       </SafeAreaView>
-    );
+    )
   }
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 0.5,
+    flex: 1,
     justifyContent: 'center',
-    alignItems: 'flex-start',
+    alignItems: 'center',
     backgroundColor: '#F5FCFF'
   }
-});
+})
